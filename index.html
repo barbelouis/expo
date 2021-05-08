@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width">
+
+  <title>DrawMyDream</title>
+  <link rel="stylesheet" href="Louis_mystyle.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <script src='home.js'></script>
+
+</head>
+<body onload="createID();">
+<div class="container" style="text-align:center">
+<h1>Welcome to Draw My Dream !</h1>
+    <p class="lead">We connect <b>artists</b> with <b>dreamers</b> requesting a drawing based on a description.</p>
+      <span>You have a drawing prompt and you don't know how to make it come to life?</span>
+      <br>
+      <span>You had a dream and you want to relive it through a drawing?</span>
+      <br>
+      <span>You want to give a special someone a portrait of them?</span>
+    <p class="lead"> <b>This is the website for you !</b></p>
+    <p class="lead">Still a bit confused? Watch our demo video :)</p>
+  </div>
+  <article class="video">
+    <video id="video" width="200" height="200" controls>
+          <source src="http://studwww.eurecom.fr/~chakroun/myvideo.mp4" type="video/mp4" />
+      </video>
+  </article>
+      <div class="jumbotron">
+          
+              <p>Let's get started !</p>
+              <button class="btn btn-primary btn-lg" id ="Register" onclick="create_account()">Create an account</button>
+              <button class="btn btn-primary btn-lg" id="login" onclick="login()">login</button>   
+      </div>
+</body>
+</html>
