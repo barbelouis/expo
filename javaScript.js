@@ -25,7 +25,7 @@
  // 4. The API will call this function when the video player is ready.
  function onPlayerReady(event) {
    event.target.playVideo();
-   //player.openFullscreen();
+   player.openFullscreen();
  }
 
  // 5. The API calls this function when the player's state changes.
@@ -42,4 +42,15 @@
    player.stopVideo();
  }
 
+
+
+ function openFullscreen() {
+if (elem.requestFullscreen) {
+elem.requestFullscreen();
+} else if (elem.webkitRequestFullscreen) { /* Safari */
+elem.webkitRequestFullscreen();
+} else if (elem.msRequestFullscreen) { /* IE11 */
+elem.msRequestFullscreen();
+}
+}
 
