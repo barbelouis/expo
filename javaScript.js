@@ -1,3 +1,6 @@
+var $ = document.querySelector.bind(document);
+ 
+ 
  // 2. This code loads the IFrame Player API code asynchronously.
  var tag = document.createElement('script');
 
@@ -7,10 +10,10 @@
 
  // 3. This function creates an <iframe> (and YouTube player)
  //    after the API code downloads.
- var player;
+ var player, iframe;
  function onYouTubeIframeAPIReady() {
    player = new YT.Player('player', {
-    playerVars: { 'autoplay': 1, 'controls': 0 },
+    playerVars: { 'autoplay': 1, 'controls': 1 },
      height: '360',
      width: '640',
      videoId: 'Pvig3OZe2nc',
@@ -24,8 +27,10 @@
 
  // 4. The API will call this function when the video player is ready.
  function onPlayerReady(event) {
-   event.target.playVideo();
-   player.openFullscreen();
+   //event.target.playVideo();
+   iframe = $('#player');
+   setupListener();
+   //event.target.playFullscreen(); 
  }
 
  // 5. The API calls this function when the player's state changes.
@@ -43,14 +48,17 @@
  }
 
 
+ function setupListener (){
+    $('button').addEventListener('click', playFullscreen);
+    }
 
- function openFullscreen() {
-if (elem.requestFullscreen) {
-elem.requestFullscreen();
-} else if (elem.webkitRequestFullscreen) { /* Safari */
-elem.webkitRequestFullscreen();
-} else if (elem.msRequestFullscreen) { /* IE11 */
-elem.msRequestFullscreen();
-}
-}
+ function playFullscreen (){
+    player.playVideo();//won't work on mobile
+    
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+      requestFullScreen.bind(iframe)();
+    }
+  }
+  
 
