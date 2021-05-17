@@ -1,5 +1,5 @@
 var $ = document.querySelector.bind(document);
- 
+
  
  // 2. This code loads the IFrame Player API code asynchronously.
  var tag = document.createElement('script');
@@ -13,7 +13,7 @@ var $ = document.querySelector.bind(document);
  var player, iframe;
  function onYouTubeIframeAPIReady() {
    player = new YT.Player('player', {
-    playerVars: { 'autoplay': 1, 'controls': 1 },
+    playerVars: { 'autoplay': 0, 'controls': 1 },
      height: '360',
      width: '640',
      videoId: 'Pvig3OZe2nc',
@@ -64,6 +64,12 @@ var $ = document.querySelector.bind(document);
   
 
   function go2quote(){
-    window.location.href='index.html'
+    window.location.href='quote.html'
 }
+
+function show(){
+   document.getElementById("player").style.visibility = "visible";
+   
+}
+
 
