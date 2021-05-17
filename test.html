@@ -3,11 +3,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body onload="openFullscreen();">
 
 <h2>Fullscreen with JavaScript</h2>
 <p>Click on the button to open the video in fullscreen mode.</p>
 <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+<div id="wrapper">
+
+    <div id="video"></div><!--video-->
+    
+    </div><!--wrapper-->
+    
+
 <p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
 
 <video width="100%" controls id="myvideo">
@@ -28,7 +35,9 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
 }
-</script>
+
+
+
 
 <p>Note: Internet Explorer 10 and earlier versions do not support the msRequestFullscreen() method.</p>
 
