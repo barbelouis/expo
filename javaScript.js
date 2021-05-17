@@ -64,7 +64,7 @@ var $ = document.querySelector.bind(document);
   
 
   function go2quote(){
-    window.location.href='quote.html'
+    window.location.href='quote.html'  
 }
 
 function show(){
