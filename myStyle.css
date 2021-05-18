@@ -1,12 +1,12 @@
 @font-face {
-	font-family: grotesque;
+	font-family: 'grotesque';
 	font-style: normal;
 	src: url('basis-grotesque-regular.ttf');
 }
 
 button {
     
-    font-family: grotesque;
+    
     display:inline-block;
     margin-top: 20px;
     margin-left: 20px;
@@ -17,10 +17,13 @@ button {
     resize: vertical;
     background-color: white;
     text-align: center;
-    font-size: larger;
+    font-size: 30px;
     
+    font-family: 'grotesque';
     
+
   }
+  
 
 div.player {
     margin: 0 auto;
@@ -29,12 +32,10 @@ div.player {
 
 
 h1 {
-    font-family: grotesque;
-    font-style: normal;
     color: white;
 }
 
 body {
     background-color: rgb(89,125,179);
-    
+    font-family: 'grotesque';
 }

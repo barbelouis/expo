@@ -13,7 +13,7 @@ var $ = document.querySelector.bind(document);
  var player, iframe;
  function onYouTubeIframeAPIReady() {
    player = new YT.Player('player', {
-    playerVars: { 'autoplay': 0, 'controls': 0 },
+    playerVars: { 'autoplay': 0, 'controls': 1 },
      height: '360',
      width: '640',
      videoId: 'Pvig3OZe2nc',
