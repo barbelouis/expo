@@ -4,6 +4,27 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="myStyle.css">
+
+
+  <style>
+    /* style the elements with CSS */
+    #pleaserotate-graphic{
+        fill: #fff;
+    }
+
+    #pleaserotate-backdrop {
+        color: #fff;
+        background-color: #000;
+    }
+</style>
+
+<script>
+    /* you can pass in options here */
+    PleaseRotateOptions = {
+        forcePortrait: false // if you would prefer to force portrait mode
+    };
+</script>
+  <script src="pleaserotate.js"></script>
   <title>Expo</title>
 
 
@@ -19,5 +40,18 @@
     window.location.href='seeYou.html';
     //window.close();
 }
+
+
+document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+            /* Device is in portrait mode */
+    }
+});
+
 </script>
 </html>
