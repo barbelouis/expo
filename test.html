@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="test.css">
 </head>
-<body onload="openFullscreen();">
+<body>
 
-<h2>Fullscreen with JavaScript</h2>
+<h2>Test video dropbox</h2>
 <p>Click on the button to open the video in fullscreen mode.</p>
+<button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
 <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
 <div id="wrapper">
 
@@ -17,11 +19,9 @@
 
 <p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
 
-<video width="100%" controls id="myvideo">
-  <source src="rain.mp4" type="video/mp4">
-  <source src="rain.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
+<video id="myvideo" height="480" width="640" style="visibility:hidden">
+  <source src="https://www.dropbox.com/s/rh49dqsp7s7p7b8/01%20yasmin-final%20.mp4?raw=1" type="video/mp4" ></source>
+  </video>
 
 
 <script>
@@ -34,8 +34,17 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
+  elem.play();
+  hideVideoControls();
 }
 
+
+function hideVideoControls(){
+  var video = document.getElementById('myvideo');
+  video.controls = 0;
+  }
+
+</script>
 
 
 
