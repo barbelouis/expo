@@ -21,6 +21,7 @@ function hideVideoControls(){
 
 function show(){
    document.getElementById("myvideo").style.visibility = "visible";
+   document.getElementById("quote").style.visibility = "hidden";
   // document.getElementById('myVideo').addEventListener('ended',go2quote,false);
  
    
