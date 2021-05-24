@@ -5,10 +5,15 @@ video::-webkit-media-controls {
 
   @font-face {
 	font-family: 'grotesque';
-	font-style: normal;
+	/*font-style: normal;*/
 	src: url('basis-grotesque-regular.ttf');
 }
 
+@font-face {
+	font-family: 'grotesque-bold';
+	font-weight: bold;
+	src: url('basis-grotesque-bold.ttf');
+}
 
   
 
@@ -17,27 +22,37 @@ div.title {
     font-size: x-large;
     box-shadow:  0px 3px 5px black;
     background-size: contain;
+    font-family: 'grotesque';
   }
   
 
 
 h1 {
     color: white;
-    font-size: xxx-large;
+   /* font-size: xxx-large;*/
     margin-bottom: 0pt;
     text-shadow:  7px 7px 20px black;
+    font-family: 'grotesque-bold';
+    
 }
 
 h2 {
     margin-top: 5pt;
     color: black;
+    font-family: 'grotesque';
+    font-family: 'grotesque-bold';
+}
+h2.end{
+    margin-top: 20pt;
+    font-size: 25pt;
+    color: white;
 }
 h3 {
     color: white;
     text-decoration: underline;
     text-decoration-color: white;
     font-size: 22pt;
-    
+    font-family: 'grotesque';
 }
 h3.name{
     position: absolute;
@@ -47,6 +62,7 @@ h3.name{
     
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    font-family: 'grotesque';
 }
 
 h3.quote{
@@ -83,7 +99,7 @@ quote {
 
 body {
     background-color: rgb(89,125,179);
-    font-family: 'grotesque';
+   /* font-family: 'grotesque';*/
 }
 
 img{
@@ -95,6 +111,7 @@ span {
     color: white;
     font-size: 30pt;
     margin: 0;
+    font-family: 'grotesque-bold';
     
   position: absolute;
   top: 50%;
