@@ -40,12 +40,13 @@ h2 {
     margin-top: 5pt;
     color: black;
     font-family: 'grotesque';
-    font-family: 'grotesque-bold';
+    
 }
 h2.end{
     margin-top: 20pt;
     font-size: 25pt;
     color: white;
+    font-family: 'grotesque-bold';
 }
 h3 {
     color: white;
