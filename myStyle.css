@@ -1,41 +1,117 @@
-@font-face {
+video::-webkit-media-controls {
+    display:none !important;
+  }
+
+
+  @font-face {
 	font-family: 'grotesque';
 	font-style: normal;
 	src: url('basis-grotesque-regular.ttf');
 }
 
-button {
-    
-    
-    display:inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    background-color: white;
-    text-align: center;
-    font-size: 30px;
-    
-    font-family: 'grotesque';
-    
 
-  }
   
 
-div.player {
-    margin: 0 auto;
+div.title {
+    background-color: lightgray;
+    font-size: x-large;
+    box-shadow:  0px 3px 5px black;
+    background-size: contain;
   }
   
 
 
 h1 {
     color: white;
+    font-size: xxx-large;
+    margin-bottom: 0pt;
+    text-shadow:  7px 7px 20px black;
+}
+
+h2 {
+    margin-top: 5pt;
+    color: black;
+}
+h3 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 22pt;
+    
+}
+h3.name{
+    position: absolute;
+    left: 50%;
+
+    top: 65%;
+    
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h3.quote{
+    position: absolute;
+    left: 50%;
+
+    top: 90%;
+    
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*
+section{
+    /*
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    position: relative;
+}*/
+quote {
+    color: white;
+    font-size: x-large;
+   margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 body {
     background-color: rgb(89,125,179);
     font-family: 'grotesque';
 }
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+span {
+    color: white;
+    font-size: 30pt;
+    margin: 0;
+    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+<style>
+    /* style the elements with CSS */
+    #pleaserotate-graphic{
+        fill: #fff;
+        background-color: rgb(89,125,179);
+    }
+
+    #pleaserotate-backdrop {
+        color: #fff;
+        background-color: rgb(89,125,179);
+    }
+</style>
